@@ -8,8 +8,8 @@ wave.wav:
 	python3 wav_generator.py -sr 16000  -f 440  -d 1.0  --wav wave.wav
 
 # generate a CPP Header file given a WAV file
-wave.h: wave.wav
-	python3 wav_to_header.py -wav wave.wav -cpp wave.h
+wave.h: elephant.wav
+	python3 wav_to_header.py -wav elephant.wav -cpp wave.h
 
 # builds the Argon firmeware given the CPP files
 firmware.bin: p2.cpp wave.h 
